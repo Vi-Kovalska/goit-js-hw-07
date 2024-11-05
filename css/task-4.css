@@ -1,0 +1,70 @@
+body {
+font-family: 'Montserrat', sans-serif;
+color:#2E2F42;
+background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p {
+margin-top: 0;
+margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+list-style-type: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+button { 
+    cursor: pointer;
+    font-family: inherit;
+}
+.label {
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-align: left;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.input {
+width: 360px;
+height: 40px;
+border: 1px solid #808080;
+border-radius: 4px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.label:last-child{
+gap: 0;
+}
+.btn {
+margin-top: 8px;
+width: 86px;
+height: 40px;
+padding: 8px 16px;
+border-radius: 8px;
+background-color: #4E75FF;
+border: none;
+font-size: 16px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+    background-color: #6C8CFF;
+}
+.input:hover, input:focus{
+    border: 1px solid #000000;
+}
+.input:active{
+    border: 1px solid #808080;
+}
