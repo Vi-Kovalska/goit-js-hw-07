@@ -1,30 +1,10 @@
 "use strict";
-// З використанням властивостей і методів DOM-елементів, напиши скрипт, який:
-
-// Порахує й виведе в консоль кількість категорій в ul#categories, тобто елементів li.item.
-// Для кожного елемента li.item у списку ul#categories знайде й виведе в консоль текст заголовка елемента (тегу <h2>) і кількість елементів у категорії (усіх <li>, вкладених у нього).
-
-
-// На що буде звертати увагу ментор при перевірці:
-
-// Кількість категорій, їх назва та кількість елементів отримані за допомогою властивостей і методів DOM-елементів
-// Дані за кожною категорією були отримані й виведені в консоль у тілі циклу або методу forEach()
-// У консолі має бути виведено наступне повідомлення:
-
-const itemAllArray = Array.from(document.querySelectorAll(".item"));
+const itemAllArray = Array.from(document.querySelectorAll(".item-menu"));
 console.log(`Number of categories: ${itemAllArray.length}`);
 
-// const animalAll = Array.from(document.querySelectorAll(".animal-item"));
-// const productAll = Array.from(document.querySelectorAll(".product-item"));
-// const technoAll = Array.from(document.querySelectorAll(".techno-item"));
-
 const h2Array = Array.from(document.querySelectorAll("h2"));
-h2Array.forEach((el, ind, arr) => {
-    console.log(`Category: ${el.textContent}`);
-    // console.log(.innerHTML);
-    
-    // console.log(`Elements ${animalAll.length}`);
-    // console.log(`Elements ${productAll.length}`);
-    // console.log(`Elements ${technoAll.length}`);
-    
-})
+
+for (let index = 0; index < h2Array.length; index++) {
+    console.log(`Category: ${h2Array[index].textContent}`);
+    console.log(`Elements: ${itemAllArray[index].children.length}`);
+}

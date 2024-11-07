@@ -35,7 +35,7 @@ letter-spacing: 0.04em;
     width: 345px;
     height: 280px;
     }
-    .btn {
+    .change-color {
 width: 148px;
 height: 40px;
 padding: 8px 16px 8px 16px;
@@ -48,6 +48,6 @@ background-color: #4E75FF;
 border: none;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-.btn:hover, .btn:focus {
+.change-color:hover, .change-color:focus {
 background-color: #6C8CFF;
 }

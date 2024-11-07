@@ -1,19 +1,25 @@
 "use strict";
-// Напиши скрипт, який змінює колір фону елемента <body> через інлайн-стиль по кліку на button.change-color і задає це значення кольору текстовим вмістом для span.color.
 
-const bg = document.querySelector(".widget");
-console.log(bg);
+const bg = document.querySelector(".body-color");
 
-bg.styles.backgroundColor = "red";
+const btn = document.querySelector(".change-color");
 
+const span = document.querySelector(".color");
 
+btn.addEventListener("click", () => {
+  span.textContent = "-";
+const randomColor = getRandomHexColor();
+bg.style.backgroundColor = `${randomColor}`;
+ const htmlString = `<span class="color">${randomColor}</span>`;
+ span.innerHTML += htmlString;
 
-
-
+});
 
 
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215)
       .toString(16)
       .padStart(6, 0)}`;
+      
   }
+  
