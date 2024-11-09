@@ -19,10 +19,63 @@ body {
     button { 
         cursor: pointer;
         font-family: inherit;
+        width: 120px;
+        height: 40px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-align: center;
+border-radius: 8px;
+border: none;
+color: #fff;
+    }
+    .btn-create{
+background-color: #4E75FF;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-create:hover, .btn-create:focus {
+background-color: #6C8CFF;
+}
+
+    .btn-destroy{
+        background-color: #FF4E4E;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-destroy:hover, .btn-destroy:focus {
+        background-color: #FF7070;
+        }
+        
+    #controls {
+        background-color: #F6F6FE;
+width: 486px;
+height: 104px;
+border-radius: 8px;
+padding: 32px;
+margin-bottom: 16px;
     }
     .div-for-figure {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
+flex-wrap: wrap;
 align-items: start;
 gap: 10px;
+min-width: 486px;
+min-height: 134px;
+background-color: #F6F6FE;
+border-radius: 8px;
+padding: 32px;
     }
+    .input {
+        width: 150px;
+        height: 40px;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .input:hover, input:focus{
+            border: 1px solid #000000;
+        }
+        .input:active{
+            border: 1px solid #808080;
+        }
